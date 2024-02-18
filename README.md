@@ -42,8 +42,8 @@ supported by CMSIS-DSP. The benchmark computes the real fft and the
 magnitude of the complex result up to the Nyquist frequency. The
 CMSIS-DSP functions are:
 
-* arm_rfft_fast_{f64,f32}, and arm_rfft_{q31,q15}
-* arm_cmplx_mag_{f64,f32,q31,q15}
+* `arm_rfft_fast_{f64,f32}`, and `arm_rfft_{q31,q15}`
+* `arm_cmplx_mag_{f64,f32,q31,q15}`
 
 The input waveform is a clean single frequency sine wave at half the
 Nyquist frequency, and a noisy version of the same signal. The
@@ -80,9 +80,9 @@ CMSIS-DSP has optimized [FIR
 decimation](https://www.keil.com/pack/doc/CMSIS/DSP/html/group__FIR__decimate.html)
 functions. The CMSIS-DSP functions are:
 
-* arm_fir_decimate_f32
-* arm_fir_decimate_{q15,q31}
-* arm_fir_decimate_fast_{q15,q31}
+* `arm_fir_decimate_f32`
+* `arm_fir_decimate_{q15,q31}`
+* `arm_fir_decimate_fast_{q15,q31}`
 
 The benchmark times decimation using a 31 tap decimation filter. The
 decimation filters were create using the [GNU
@@ -170,16 +170,11 @@ minicom -b 115200 -D /dev/cu.usbmodem14644202  # This is the MacOS serial device
 
 ## Load via USB and monitor with the USB serial port.
 
-Alternatively, use the USB port. To do this
+Alternatively, use the USB port to drag and drop the cmsis-sandbox.utf
+file.
 
-# usb serial port
-# describe cmake file change
-drag and drop utf file
-minicom -D /dev/cu.usbmodem14644201  # This is the  MacOS serial device. Yours may vary.
-```
-
-USB support is disabled by default. It has to be enabled in the
-project's `CMakeLists.txt` file. Look for the
+USB support is disabled by default in the cmsis-sandbox build. It has
+to be enabled in the project's `CMakeLists.txt` file. Look for the
 `pico_enable_stdio_{uart,usb}` calls:
 
 ```
@@ -188,9 +183,22 @@ pico_enable_stdio_uart(cmsis-sandbox 1) # set to one to enable (default)
 pico_enable_stdio_usb(cmsis-sandbox 0)  # set to one to enable
 ```
 
+Then connect to the USB serial port:
+
+```
+minicom -D /dev/cu.usbmodem14644201  # This is the  MacOS serial device. Yours may vary.
+```
+
 Note that USB won't work unless TinyUSB is enabled in the pico-sdk
 build. That requires executing `git submodule update --init` in the
 pico-sdk repository before building it (as noted above).
+
+Note that the USB serial connection is dropped when the Pico
+reboots. This means that you will have to quickly connect your
+terminal program to the Pico's USB serial port to see the output of
+benchmark. The benchmark takes long enough to run, before printing its
+final summary tables, that this should not be a problem. Connecting
+via the UART serial port doesn't have this complication.
 
 # Addendum
 
