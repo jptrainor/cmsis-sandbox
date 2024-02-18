@@ -1,17 +1,18 @@
 # Benchmarking
-[CMSIS-DSP](https://www.keil.com/pack/doc/CMSIS/DSP/html/index.html)
+
+Benchmarking [CMSIS-DSP](https://www.keil.com/pack/doc/CMSIS/DSP/html/index.html)
 on the [Rasberry Pi
 Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/).
 
 CMSIS-DSP is a digital signal processing library optimized for ARM
-processors. It supports floating point and fixed point types.
+processors. It supports floating point and fixed point data types.
 
-Raspberry Pi Pico is microcontroller development board with a
+Raspberry Pi Pico is a microcontroller development board with a
 [RP2040](https://www.raspberrypi.com/products/rp2040/), both designed
 by Raspberry Pi.
 
 The RP2040 is a dual core [ARM
-Cortext-M0+](https://www.raspberrypi.com/products/rp2040/)
+Cortext-M0+](https://developer.arm.com/Processors/Cortex-M0-Plus)
 microcontroller. The Cortex-M0+ processor has no floating point
 support and no vector processing support. The RP2040, however, does
 have optimized "fast floating point" software built into its
