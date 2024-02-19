@@ -27,8 +27,8 @@ This project benchmarks the performance of CMSIS-DSP:
 
 Using the following CMSIS-DSP data types:
 
-* 64 bit float (`float32_t`)
-* 32 bit float (`float64_t`)
+* 64 bit float (`float64_t`)
+* 32 bit float (`float32_t`)
 * Q1.31 bit fixed point (`q31_t`)
 * Q1.15 bit fixed point (`q15_t`)
 
