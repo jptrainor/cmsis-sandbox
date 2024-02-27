@@ -158,10 +158,10 @@ Execute the code using the [Rasberry Pi Debug
 Probe](https://www.raspberrypi.com/products/debug-probe/) and [OpenOCD
 for RP2040](https://www.raspberrypi.com/products/debug-probe/).
 
-You'll need to build OpenOcd with RP2040 support:
+You'll need to build OpenOCD with RP2040 support:
 
 ```
-# build OpenOcd with RP2040 support
+# build OpenOCD with RP2040 support
 git clone --depth 1 -b rp2040-v0.12.0 https://github.com/raspberrypi/openocd.git
 ./configure --preefix=<openocd_instal_dir>
 make -j4
