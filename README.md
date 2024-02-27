@@ -3,7 +3,7 @@ SPDX-FileCopyrightText: 2024 Jim Trainor <https://github.com/jptrainor/cmsis-san
 SPDX-License-Identifier: Apache-2.0
 -->
 
-# Benchmarking
+# Benchmarking CMSIS-DSP on Rasberry Pi Pico
 
 Benchmarking [CMSIS-DSP](https://www.keil.com/pack/doc/CMSIS/DSP/html/index.html)
 on the [Rasberry Pi
