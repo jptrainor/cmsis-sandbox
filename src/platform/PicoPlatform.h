@@ -11,7 +11,7 @@ namespace platform {
     absolute_time_t t;
   };
 
-  // platform dependent init, return value 0 is success
+  // platform dependent init
   void init();
 
   // timestamp in us
