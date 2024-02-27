@@ -24,6 +24,6 @@ function s = signal(N, k, addNoise = false)
  
   s = sin([0:1:(N-1)]*pi/k);
   if ( addNoise == true )
-    s = 0.7*s + [0.5*rand(1, N) - 0.25];
+    s = 0.75*s + [0.5*rand(1, N) - 0.25];
   endif
 endfunction
