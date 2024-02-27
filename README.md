@@ -1,3 +1,8 @@
+<!--
+SPDX-FileCopyrightText: 2024 Jim Trainor <https://github.com/jptrainor/cmsis-sandbox/issues>
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Benchmarking
 
 Benchmarking [CMSIS-DSP](https://www.keil.com/pack/doc/CMSIS/DSP/html/index.html)
