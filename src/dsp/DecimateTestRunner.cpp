@@ -1,3 +1,6 @@
+//  SPDX-FileCopyrightText: 2024 Jim Trainor <https://github.com/jptrainor/cmsis-sandbox/issues>
+//  SPDX-License-Identifier: Apache-2.0
+
 #include "DecimateTestRunner.h"
 
 #include "DecimateTest.h"

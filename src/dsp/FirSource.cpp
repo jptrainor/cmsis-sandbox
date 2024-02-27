@@ -1,3 +1,6 @@
+//  SPDX-FileCopyrightText: 2024 Jim Trainor <https://github.com/jptrainor/cmsis-sandbox/issues>
+//  SPDX-License-Identifier: Apache-2.0
+
 #include "FirSource.h"
 
 #include "Source.h"
